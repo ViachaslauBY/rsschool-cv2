@@ -24,3 +24,26 @@ My main goal is to get a job as a Front-end developer and to become a highly qua
 - **Figma**
 
 ---
+
+## Code examples
+
+```
+function getSum(a) {
+  return function(b) {
+    console.log(a + b);
+  }
+}
+
+const sum = getSum(10);
+sum(1);
+
+```
+
+---
+
+## Work experience
+
+- **https://viachaslauby.github.io/Fortune-telling-cards/**
+- **https://viachaslauby.github.io/Skillbox/**
+
+---
