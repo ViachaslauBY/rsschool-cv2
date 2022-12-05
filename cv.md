@@ -47,3 +47,17 @@ sum(1);
 - **https://viachaslauby.github.io/Skillbox/**
 
 ---
+
+## Courses
+
+- **IT-Academy** - _Website development with HTML, CSS & JavaScript_
+- **IT-Academy** - _Web application development with JavaScript_
+- **EPAM Training** - _Front-End Development_
+
+---
+
+## Languages
+
+- **English: A2**
+- **Belarusian: Native**
+- **Russian: Fluent**
