@@ -2,8 +2,17 @@
   font-family: 'aubrey_proregular';
   src: url('../fonts/aubreypro-webfont.woff2') format('woff2'),
     url('../fonts/aubreypro-webfont.woff') format('woff');
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'doloman_pavljenkolight';
+  src: url('../fonts/dolomanpavljenko-webfont.woff2') format('woff2'),
+    url('../fonts/dolomanpavljenko-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 * {
@@ -13,7 +22,7 @@
 }
 
 body {
-  font-family: 'aubrey_proregular', sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container {
@@ -24,13 +33,15 @@ body {
 
 .contacts, 
 .about,
-.education {
+.education,
+.skills {
   margin-bottom: 20px;
 }
 
 .contacts__wrapper,
 .about__wrapper,
-.education__wrapper {
+.education__wrapper,
+.skills__wrapper {
   position: relative;
   margin-bottom: 10px;
   text-align: center;
@@ -38,12 +49,14 @@ body {
 
 .contacts__title,
 .about__title,
-.education__title {
+.education__title, 
+.skills__title {
   display: inline-block;
   margin-bottom: 0;
   padding: 7px 24px;
   border: 3px solid #0039a6;
-  font-size: 22px;
+  font-family: 'aubrey_proregular', sans-serif;
+  font-size: 24px;
   color: #0039a6;
   background-color: #fff;
   text-align: center;
@@ -52,7 +65,8 @@ body {
 
 .contacts__title::after,
 .about__title::after,
-.education__title::after {
+.education__title::after,
+.skills__title::after {
   content: "";
   position: absolute;
   background-color: #0039a6;
@@ -272,7 +286,8 @@ body {
 .education__link {
   margin-bottom: 10px;
   width: fit-content;
-  font-size: 18px;
+  font-family: 'doloman_pavljenkolight';
+  font-size: 20px;
   font-weight: 700;
   color: #356ad3;
   text-transform: uppercase;
@@ -294,4 +309,37 @@ body {
 
 .education__profession {
   font-size: 18px;
+}
+
+/**********SKILLS**********/
+.skills__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.skills__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skills__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.skills__icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.skills__text {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
 }
