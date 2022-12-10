@@ -5,14 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="css/style.css">  
+  <link rel="stylesheet" href="css/style.css"> 
+  <script src="js/burger-menu.js" defer></script> 
+  <script src="js/smooth-scrolling.js" defer></script> 
   <title>Viachaslau Fedartsou CV</title>
 </head>
 <body>
 
   <header class="header">
     <div class="container">
-      <div class="header__container">        
+      <div class="header__container">  
+        <div class="header__burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </div>
         <div class="header__nav">          
           <nav class="nav">
             <ul class="nav__list">
@@ -308,12 +315,12 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
-        <a href="https://github.com/ViachaslauBY" target="_blank">
-          <img class="github__img" src="img/github.svg" alt="Github">
+        <a class="footer__link" href="https://github.com/ViachaslauBY" target="_blank">
+          <img class="footer__img github" src="img/github.svg" alt="Github">
         </a>
         <span class="footer__text">2022</span>
-        <a href="https://rs.school/js/" target="_blank">
-          <img class="rs__img" src="img/rsschool.svg" alt="RSSchool">
+        <a class="footer__link" href="https://rs.school/js/" target="_blank">
+          <img class="footer__img rs" src="img/rsschool.svg" alt="RSSchool">
         </a>
       </div>
     </div>
