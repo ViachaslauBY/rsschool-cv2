@@ -35,7 +35,8 @@ body {
 .about,
 .education,
 .skills,
-.work-experience {
+.work-experience,
+.code {
   margin-bottom: 20px;
 }
 
@@ -43,9 +44,10 @@ body {
 .about__wrapper,
 .education__wrapper,
 .skills__wrapper,
-.work-experience__wrapper {
+.work-experience__wrapper, 
+.code__wrapper {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -53,7 +55,8 @@ body {
 .about__title,
 .education__title, 
 .skills__title, 
-.work-experience__title {
+.work-experience__title,
+.code__title {
   display: inline-block;
   margin-bottom: 0;
   padding: 7px 24px;
@@ -70,7 +73,8 @@ body {
 .about__title::after,
 .education__title::after,
 .skills__title::after,
-.work-experience__title::after {
+.work-experience__title::after,
+.code__title::after {
   content: "";
   position: absolute;
   background-color: #0039a6;
@@ -414,4 +418,16 @@ body {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+/**********CODE EXAMPLE**********/
+.code__content {
+  display: flex;
+  padding: 10px;
+  border: 2px solid #00246C;
+  border-radius: 10px;
+}
+
+.code__text {
+  font-size: 18px;
 }
