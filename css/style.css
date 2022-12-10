@@ -23,6 +23,7 @@
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #f9f7f7;
 }
 
 .container {
@@ -36,7 +37,8 @@ body {
 .education,
 .skills,
 .work-experience,
-.code {
+.code,
+.languages {
   margin-bottom: 20px;
 }
 
@@ -45,7 +47,8 @@ body {
 .education__wrapper,
 .skills__wrapper,
 .work-experience__wrapper, 
-.code__wrapper {
+.code__wrapper,
+.languages__wrapper {
   position: relative;
   margin-bottom: 20px;
   text-align: center;
@@ -56,7 +59,8 @@ body {
 .education__title, 
 .skills__title, 
 .work-experience__title,
-.code__title {
+.code__title,
+.languages__title {
   display: inline-block;
   margin-bottom: 0;
   padding: 7px 24px;
@@ -74,7 +78,8 @@ body {
 .education__title::after,
 .skills__title::after,
 .work-experience__title::after,
-.code__title::after {
+.code__title::after,
+.languages__title::after {
   content: "";
   position: absolute;
   background-color: #0039a6;
@@ -429,5 +434,25 @@ body {
 }
 
 .code__text {
+  font-size: 18px;
+}
+
+/**********LANGUAGES**********/
+.languages__list {
+  list-style: none;
+}
+
+.languages__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.languages__img {
+  margin-right: 10px;
+  width: 60px;
+}
+
+.languages__text {
   font-size: 18px;
 }
