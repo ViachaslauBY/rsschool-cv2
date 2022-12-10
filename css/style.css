@@ -26,6 +26,14 @@ body {
   background-color: #f9f7f7;
 }
 
+.dark {
+  color: #fff;
+}
+
+.dark body {
+  background-color: #000;
+}
+
 body.lock {
   overflow: hidden;
 }
@@ -34,6 +42,17 @@ body.lock {
   margin: 0 auto;
   max-width: 1300px;
   padding: 0 10px;
+}
+
+.button-reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  font-family: inherit;
+  background-color: transparent;
+  box-shadow: none;
+  cursor: pointer;
 }
 
 .contacts, 
@@ -77,6 +96,17 @@ body.lock {
   text-transform: uppercase;
 }
 
+.dark .contacts__title,
+.dark .about__title,
+.dark .education__title,
+.dark .skills__title,
+.dark .work-experience__title,
+.dark .code__title,
+.dark .languages__title {
+  background-color: #0039a6;
+  color: #fff;
+}
+
 .contacts__title::after,
 .about__title::after,
 .education__title::after,
@@ -113,23 +143,24 @@ body.lock {
   justify-content: space-between;
 }
 
-.header__button {
-  display: flex;
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 3;
+.header__icon-toggle {
+  display: flex;  
+}
+
+.material-icons {
+  font-size: 30px;  
+  line-height: normal;
+}
+
+.dark .material-icons {
+  color: #fff;
 }
 
 .header__burger {
   position: relative;
   display: none;
   width: 30px;
-  height: 18px;  
-  cursor: pointer;
+  height: 18px;    
   z-index: 3;
 }
 
@@ -141,6 +172,10 @@ body.lock {
   height: 2px;
   background-color: #000;
   transition: all .2s;
+}
+
+.dark .burger__line {
+  background-color: #fff;
 }
 
 .burger__line:first-child {
@@ -183,6 +218,10 @@ body.lock {
   text-decoration: none;
 }
 
+.dark .nav__link {
+  color: #fff;
+}
+
 .nav__link:hover {
   color: #356ad3;
 }
@@ -209,12 +248,23 @@ body.lock {
   text-shadow: 1px 1px white, 2px 2px #777;
 }
 
+.dark .header__title {
+  color: #fff;
+  text-shadow: 1px 1px #777, 2px 2px #356ad3;
+}
+
 .header__subtitle {
   font-size: 39px;
   text-shadow: 1px 1px white, 2px 2px #777;
 }
 
+.dark .header__subtitle {
+  color: #fff;
+  text-shadow: 1px 1px #777, 2px 2px #356ad3;
+}
+
 /**********CONTACTS**********/
+
 .contacts__list {
   display: flex;
   flex-direction: column;
@@ -256,6 +306,10 @@ body.lock {
   font-size: 18px;
   color: #000;
   text-decoration: none;
+}
+
+.dark .contacts__text {
+  color: #fff;
 }
 
 .contacts__text::before {
@@ -341,6 +395,10 @@ body.lock {
   z-index: 1;
 }
 
+.dark .education__name::before {
+  background-color: #f9f400;
+}
+
 .education__name::after {
   content: "";
   position: absolute;
@@ -367,6 +425,10 @@ body.lock {
   -ms-transition: -ms-transform .3s linear;
   -o-transition: -o-transform .3s linear;
   transition: transform .3s linear;
+}
+
+.dark .education__link {
+  color: #f9f400;
 }
 
 .education__link:hover {
@@ -409,8 +471,7 @@ body.lock {
 .skills__text {
   margin-bottom: 5px;
   font-weight: 700;
-  font-size: 18px;
-  color: #000;
+  font-size: 18px;  
   text-decoration: none;
 }
 
@@ -536,6 +597,10 @@ body.lock {
   font-weight: 700;
 }
 
+.dark .footer__text {
+  color: #000;
+}
+
 .footer__img {  
   -webkit-transition: -webkit-transform .3s linear;
   -moz-transition: -moz-transform .3s linear;
@@ -616,6 +681,10 @@ body.lock {
     transition: all .2s;
     z-index: 2;
   }  
+
+  .dark .nav {
+    background-color: #000;
+  }
 
   .nav.active {
     left: 0;
@@ -788,6 +857,10 @@ body.lock {
     margin-top: 0;
     width: fit-content;
   }  
+
+  .dark .education__date {
+    color: #f70006;
+  }
 
   .education__name::before {
     top: -45px;
