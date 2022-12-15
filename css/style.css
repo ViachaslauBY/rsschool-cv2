@@ -6,15 +6,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'doloman_pavljenkolight';
-  src: url('../fonts/dolomanpavljenko-webfont.woff2') format('woff2'),
-    url('../fonts/dolomanpavljenko-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +14,7 @@
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #f9f7f7;
+  background-color: #f3f0f0;
 }
 
 .dark {
@@ -50,6 +41,7 @@ body.lock {
   border: none;
   border-radius: 0;
   font-family: inherit;
+  font-size: 0;
   background-color: transparent;
   box-shadow: none;
   cursor: pointer;
@@ -143,8 +135,31 @@ body.lock {
   justify-content: space-between;
 }
 
+.header__butoons {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+}
+
+.header__translation {
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+
+.translation__img {
+  width: 40px;
+  height: 25px;
+}
+
+.translation__img:first-child {
+  margin-right: 5px;
+}
+
 .header__icon-toggle {
   display: flex;  
+  margin-right: 10px;
+  z-index: 3;
 }
 
 .material-icons {
@@ -207,11 +222,11 @@ body.lock {
 }
 
 .nav__item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .nav__link {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   color: #000;
   text-transform: uppercase;
@@ -365,7 +380,7 @@ body.lock {
 
 .education__date {
   margin-top: 20px;
-  width: 100px;
+  width: 120px;
   font-size: 18px;
 }
 
@@ -413,8 +428,7 @@ body.lock {
 
 .education__link {
   margin-bottom: 10px;
-  width: fit-content;
-  font-family: 'doloman_pavljenkolight';
+  width: fit-content;  
   font-size: 20px;
   font-weight: 700;
   color: #356ad3;
@@ -569,6 +583,7 @@ body.lock {
 .languages__img {
   margin-right: 10px;
   width: 60px;
+  height: 30px;
 }
 
 .languages__text {
@@ -663,6 +678,10 @@ body.lock {
   .code__wrapper,
   .languages__wrapper {    
     margin-bottom: 10px;    
+  }
+
+  .translation__img:first-child {
+    margin-right: 15px;
   }
 
   .header__burger {
@@ -865,9 +884,7 @@ body.lock {
   .education__name::before {
     top: -45px;
     left: -webkit-calc(50% - 7px);
-    left: -moz-calc(50% - 7px);
-    left: -ms-calc(50% - 7px);
-    left: -o-calc(50% - 7px);
+    left: -moz-calc(50% - 7px);    
     left: calc(50% - 7px);   
   }
 
